@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package data;
+package presentation;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -37,16 +37,19 @@ public class MyHttpServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet MyHttpServlet</title>");            
+            out.println("<title>Servlet MyHttpServlet</title>");
+            out.println("<link href=\"css/styles.css\" rel=\"stylesheet\" type=\"text/css\" />");            
             out.println("</head>");
-            out.println("<body>");
-            out.println("<a href=\"../src/Web Pages/kontaktoplysninger.html\">Kontaktoplysninger</a>");
+            out.println("<body>");            
+            out.println("<nav>");
+            out.println("<a href=\"../../kontaktoplysninger.html\">Kontaktoplysninger</a>");
+            out.println("</nav>");            
             out.println("<h1 align=\"center\">Lidt om mig</h1>");
             out.println("<p>Jeg er i gang med at tage kurset Web-Programmering, Server-Side." + 
                     "Jeg tager dette kursus som del af min AU i IT." +
                     "Med kurset håber jeg at kunne lære om at bygge hjemmesider, da jeg har" +
                     " ambitioner om selv at bygge en velfungerende hjemmeside en dag.</p>");
-            out.println("<img src=\"../src/java/img/Iwan_Bonnén.jpg\"/>");
+            out.println("<img src=\"img/IwanBonnen.jpg\" />");
             out.println("</body>");
             out.println("</html>");
         }

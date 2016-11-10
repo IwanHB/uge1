@@ -8,6 +8,13 @@ and open the template in the editor.
     Author     : Iwan
 */
 
+body {
+    background-color:khaki;    
+}
+h1 {    
+    color:red;
+    text-align: center;    
+}
 #mainDiv {    
     width:70%;
     margin:auto;
@@ -19,9 +26,20 @@ and open the template in the editor.
     width:100%;
 }
 
-.hyperLink {
-    
-    color:lightblue;
+.hyperLink {    
+    color:dodgerblue;
     text-decoration: none;
 }
 
+nav {
+    width:30%;
+    margin:auto;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border: 5px black double;
+}
+
+p {    
+    width:30%;    
+    margin: auto;
+}
